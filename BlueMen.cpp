@@ -70,13 +70,13 @@ int BlueMen::defend()
    if((strength > 0) && (strength < 5))
    {
 	num = 1;
-	std::cout << "\nThe Blue Men's defenses are weakened.  Only one defense die remains." << std::endl;
+	std::cout << "The Blue Men's defenses are weakened.  Only one defense die remains." << std::endl;
    }
 
    if((strength > 4) && (strength < 9))
    {
 	num = 2;
-	std::cout << "\nThe Blue Men's defenses are weakened.  Only two defense dice remain." << std::endl;
+	std::cout << "The Blue Men's defenses are weakened.  Only two defense dice remain." << std::endl;
    }
    totalRoll = roll(num, size);
 
