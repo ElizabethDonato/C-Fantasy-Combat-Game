@@ -108,7 +108,7 @@ bool Game::play_game()
 	 {
 	    fighterDefend = 0;
 	    std::cout << fighter2 ->get_type() << " has been turned to stone! No defense is possible!" 
-		      << std::endl;  
+		      << std::endl << std::endl;  
 	 }
 	 //If Vampire's Charm defense if effective, opponent does not attack
 	 if(fighterDefend == -1)
@@ -155,7 +155,7 @@ bool Game::play_game()
 	    {
 	       fighterAttack = fighter1Strength;
 	       isStone = true;
-	       std::cout <<"\nThe " << fighter2 ->get_type() << " Glare is effective!" << std::endl;
+	       std::cout <<"The " << fighter2 ->get_type() << " Glare is effective!" << std::endl;
 	    }
 	    
 	    //fighter 1 defends
@@ -165,7 +165,7 @@ bool Game::play_game()
 	    {
 	       fighterDefend = 0;
 	       std::cout << fighter1 ->get_type() << " has been turned to stone! No defense is possible!" 
-		         << std::endl;  
+		         << std::endl << std::endl;  
 	    }
 	    //If Vampire's Charm defense if effective, opponent does not attack
 	    if(fighterDefend == -1)
@@ -273,7 +273,7 @@ void Game::display_round(int stage)
 
    else
    {
-	std::cout << "\nNow Fighter 2, the " << fighter2 ->get_type() << ", attacks!" << std::endl;
+	std::cout << "Now Fighter 2, the " << fighter2 ->get_type() << ", attacks!" << std::endl;
    	std::cout << "The " << fighter2 ->get_type() << " attacks with a " << fighterAttack << "!" << std::endl;
    	std::cout << "Fighter 1, the " << fighter1 ->get_type() << ", defends with a " << fighterDefend << "!" << std::endl;
    	std::cout << "The " << fighter1 ->get_type() << " takes " << totalDamage << " points of damage." << std::endl;
