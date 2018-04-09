@@ -120,9 +120,11 @@ int Creature::roll(int numDice, int sizeDie)
 void Creature::new_life()
 {
    //Resets strength if new life is available
-   //As Harry Potter is the only Creature with 
-   //this characteristic, defaults are set for
-   //Harry Potter
+   //As Harry Potter is the only Creature in this 
+   //game with this characteristic, defaults are 
+   //set for Harry Potter.  The defaults can be
+   //updated for additional characters if required
+   //by game constraints.
 
    if(newLives == 1)
    {
